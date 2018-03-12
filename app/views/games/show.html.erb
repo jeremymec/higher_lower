@@ -1,0 +1,8 @@
+<p1>Lives Left: <%= @game.lives_left(@game.id) %> </p>
+
+  <%= form_for ([@game, Guess.new]),
+   html: {class: "nifty_form"} do |f| %>
+   <%= f.hidden_field :game_id, :value => @game.id %>
+    <%= f.text_field :number %>
+    <%= f.submit "Guess!" %>
+  <% end %>

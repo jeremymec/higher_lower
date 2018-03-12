@@ -1,0 +1,25 @@
+<h1>Welcome to higher lower!</h1>
+<br>
+<h2>Games List</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Lives</th>
+    <th>Result</th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%= game.id %></td>
+    <td><%= game.lives_left(game.id) %></td>
+    <td><%= game.result(game.id) %></td>
+    <td><%= button_to "Play", { :action => "show", :id => game.id }, :method => :get %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= form_for (Game.new),
+ html: {class: "nifty_form"} do |f| %>
+  <%= f.submit "New Game" %>
+<% end %>
