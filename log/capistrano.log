@@ -1,0 +1,113 @@
+# Logfile created on 2018-03-12 20:06:35 +1300 by logger.rb/56438
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:06:35 +1300 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [8b35b896] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [8b35b896] Command: [ -d ~/.rvm ]
+ DEBUG [8b35b896] Finished in 7.913 seconds with exit status 0 (successful).
+ DEBUG [93ce64cd] Running ~/.rvm/bin/rvm version on 128.199.151.185
+ DEBUG [93ce64cd] Command: ~/.rvm/bin/rvm version
+ DEBUG [93ce64cd] 	rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [93ce64cd] 	
+ DEBUG [93ce64cd] Finished in 0.993 seconds with exit status 0 (successful).
+ DEBUG [1e932f51] Running ~/.rvm/bin/rvm current on 128.199.151.185
+ DEBUG [1e932f51] Command: ~/.rvm/bin/rvm current
+ DEBUG [1e932f51] 	ruby-2.3.3
+ DEBUG [1e932f51] 	
+ DEBUG [1e932f51] Finished in 0.963 seconds with exit status 0 (successful).
+ DEBUG [62686e39] Running ~/.rvm/bin/rvm default do ruby --version on 128.199.151.185
+ DEBUG [62686e39] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [62686e39] 	ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
+ DEBUG [62686e39] 	
+ DEBUG [62686e39] Finished in 1.193 seconds with exit status 0 (successful).
+  INFO [663d0149] Running /usr/bin/env mkdir -p /tmp on 128.199.151.185
+ DEBUG [663d0149] Command: /usr/bin/env mkdir -p /tmp
+  INFO [663d0149] Finished in 0.550 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-higherlower-production-jeremy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-higherlower-production-jeremy.sh 100.0%
+  INFO [3a391743] Running /usr/bin/env chmod 700 /tmp/git-ssh-higherlower-production-jeremy.sh on 128.199.151.185
+ DEBUG [3a391743] Command: /usr/bin/env chmod 700 /tmp/git-ssh-higherlower-production-jeremy.sh
+  INFO [3a391743] Finished in 0.720 seconds with exit status 0 (successful).
+  INFO [f4f6321a] Running /usr/bin/env git ls-remote git@example.com:jezza97/higherlower HEAD on 128.199.151.185
+ DEBUG [f4f6321a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-higherlower-production-jeremy.sh" ; /usr/bin/env git ls-remote git@example.com:jezza97/higherlower HEAD )
+ DEBUG [f4f6321a] 	ssh: connect to host example.com port 22: Network is unreachable
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:15:22 +1300 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c116d5a9] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [c116d5a9] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:15:39 +1300 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bb1b9f1d] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [bb1b9f1d] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:16:06 +1300 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [75c8e22b] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [75c8e22b] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:17:42 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [426b10f9] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [426b10f9] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 20:18:06 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f785f239] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [f785f239] Command: [ -d ~/.rvm ]
+ DEBUG [f785f239] Finished in 11.021 seconds with exit status 0 (successful).
+ DEBUG [88a96edd] Running ~/.rvm/bin/rvm version on 128.199.151.185
+ DEBUG [88a96edd] Command: ~/.rvm/bin/rvm version
+ DEBUG [88a96edd] 	rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [88a96edd] 	
+ DEBUG [88a96edd] Finished in 0.958 seconds with exit status 0 (successful).
+ DEBUG [e8fa5cb1] Running ~/.rvm/bin/rvm current on 128.199.151.185
+ DEBUG [e8fa5cb1] Command: ~/.rvm/bin/rvm current
+ DEBUG [e8fa5cb1] 	ruby-2.3.3
+ DEBUG [e8fa5cb1] 	
+ DEBUG [e8fa5cb1] Finished in 0.945 seconds with exit status 0 (successful).
+ DEBUG [b469eafa] Running ~/.rvm/bin/rvm default do ruby --version on 128.199.151.185
+ DEBUG [b469eafa] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [b469eafa] 	ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
+ DEBUG [b469eafa] 	
+ DEBUG [b469eafa] Finished in 1.150 seconds with exit status 0 (successful).
+  INFO [ab2745fb] Running /usr/bin/env mkdir -p /tmp on 128.199.151.185
+ DEBUG [ab2745fb] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ab2745fb] Finished in 0.715 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-higherlower-production-jeremy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-higherlower-production-jeremy.sh 100.0%
+  INFO [ddb53265] Running /usr/bin/env chmod 700 /tmp/git-ssh-higherlower-production-jeremy.sh on 128.199.151.185
+ DEBUG [ddb53265] Command: /usr/bin/env chmod 700 /tmp/git-ssh-higherlower-production-jeremy.sh
+  INFO [ddb53265] Finished in 0.718 seconds with exit status 0 (successful).
+  INFO [ceaaf54e] Running /usr/bin/env git ls-remote git@example.com:jezza97/higherlower HEAD on 128.199.151.185
+ DEBUG [ceaaf54e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-higherlower-production-jeremy.sh" ; /usr/bin/env git ls-remote git@example.com:jezza97/higherlower HEAD )
+ DEBUG [ceaaf54e] 	ssh: connect to host example.com port 22: Network is unreachable
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 21:23:07 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [85f65158] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [85f65158] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 21:23:28 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [405fd044] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [405fd044] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 21:26:14 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [794b6b63] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [794b6b63] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-03-12 21:26:25 +1300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ec5ceccf] Running [ -d ~/.rvm ] on 128.199.151.185
+ DEBUG [ec5ceccf] Command: [ -d ~/.rvm ]

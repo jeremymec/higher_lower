@@ -1,5 +1,5 @@
 # Change these
-server '128.199.151.185', port: 22, roles: [:web, :app, :db], primary: true
+server '128.199.151.185', port: 80, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@example.com:jezza97/higherlower'
 set :application,     'higherlower'

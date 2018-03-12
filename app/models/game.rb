@@ -9,20 +9,20 @@ class Game < ApplicationRecord
     game.secretNum = secret
     game.save
   end
--
+
   def game_won(game_id)
-      @game = Game.find(game_id)
+    @game = Game.find(game_id)
 
-      game_secret = @game.secretNum
+    game_secret = @game.secretNum
 
-      @game.guesses.each do |guess|
-        guess_number = guess.number
+    @game.guesses.each do |guess|
+      guess_number = guess.number
 
-        if (game_secret == guess_number)
-          return true
-        end
+      if (game_secret == guess_number)
+        return true
       end
-        return false
+    end
+    return false
   end
 
   def game_lost(game_id)
