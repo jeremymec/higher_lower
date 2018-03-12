@@ -9,7 +9,7 @@ class Game < ApplicationRecord
     game.secretNum = secret
     game.save
   end
-
+-
   def game_won(game_id)
       @game = Game.find(game_id)
 
