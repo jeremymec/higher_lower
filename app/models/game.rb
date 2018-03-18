@@ -31,6 +31,25 @@ class Game < ApplicationRecord
     return lives_left(game_id) < 1
   end
 
+  def last_guess_result(game_id)
+    @game = Game.find(game_id)
+    @guess = @game.guesses.last
+
+    if (!@guess)
+      return nil
+    end
+
+    guessNumber = @guess.number
+    gameNumber = @game.secretNum
+
+    if (guessNumber < gameNumber)
+      return "Higher!"
+    else
+      return "Lower!"
+    end
+
+  end
+
   def lives_left(game_id)
     @game = Game.find(game_id)
 

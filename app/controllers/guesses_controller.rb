@@ -4,9 +4,10 @@ class GuessesController < ApplicationController
 
     @guess = @game.guesses.create(guess_parameters)
 
-    redirect_to @game
+    redirect_to(@game)
   end
-end
+
+  end
 
 private
 

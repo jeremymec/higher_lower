@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+
   def index
     @games = Game.all
   end
@@ -15,8 +16,9 @@ class GamesController < ApplicationController
       defeat
     elsif @game.game_won(@game.id)
       victory
+    else
+      @result = @game.last_guess_result(@game.id)
     end
-
   end
 
   def victory
